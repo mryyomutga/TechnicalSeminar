@@ -1,7 +1,7 @@
 # TechnicalSeminar
 専門ゼミの活動記録
 
-## day1
+## Day1 2017/10/19 (Thu)
 ### 内容
 - Python2を触ってみる
 - python3のprint()を使えるようにする
