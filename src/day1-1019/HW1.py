@@ -24,15 +24,15 @@ for n in range(0, 10):
 # 2. 変数を5秒間、インクリメントし続け、5秒後にその値を表示する
 # time.time()  現在のUNIX時間の取得
 
-start = time.time() # 計測開始時刻の取得
+start = time.time()     # 計測開始時刻の取得
 now_time = start
-cnt = 0               # インクリメント用変数
+cnt = 0                 # インクリメント用変数
 
 # 開始時刻と現在の時間の差が5.0秒以下であればインクリメントし続ける
 while now_time - start < 5.0:
-    now_time = time.time();  # 現在の時刻の取得
+    now_time = time.time()  # 現在の時刻の取得
     cnt += 1
-    time.sleep(0.1)      # 0.1秒スリープ
+    time.sleep(0.1)         # 0.1秒スリープ
 
 print(cnt)
 
