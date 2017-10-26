@@ -20,6 +20,12 @@ for n in range(0, 10):
     else:
         print(face[1])
 
+# 解答例
+# while True:
+#     for n in ["(9_9)", "(6_6)"]:
+#         time.sleep(0.5)
+#         print(n)
+
 # 所要時間 : 3分
 
 # 2. 変数を5秒間、インクリメントし続け、5秒後にその値を表示する
