@@ -1,0 +1,66 @@
+Python 2.7.12 (default, Nov 19 2016, 06:48:10) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 2.4.1 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: dic={'height':165, 'weight':50}
+
+In [2]: dic['weight']
+Out[2]: 50
+
+In [3]: dic['weight']=100
+
+In [4]: print(dic)
+{'weight': 100, 'height': 165}
+
+In [5]: import math
+
+In [6]:  
+
+In [6]: [math.sqrt(x) for x in [10,20,30,40]]
+Out[6]: [3.1622776601683795, 4.47213595499958, 5.477225575051661, 6.324555320336759]
+
+In [7]: L=[10,20,30,40]
+
+In [8]: [math.sqrt(x) for x in L]
+Out[8]: [3.1622776601683795, 4.47213595499958, 5.477225575051661, 6.324555320336759]
+
+In [9]: [math.sqrt(x) for x in L if x<30]
+Out[9]: [3.1622776601683795, 4.47213595499958]
+
+In [10]: dat=[\
+   ....:      ["yamda","./ep17/main.pdf",1000],\
+   ....:      ["inoue","./ep18/main.pdf",20],\
+   ....:      ["nakano","./ep19/main.pdf",-10],\
+   ....:      ["takago","./ep20/main.pdf",30],\
+   ....:     ]
+
+In [11]:     
+
+In [11]: a=[x[0] for x in dat]
+
+In [12]: b=[x[1] for x in dat]
+
+In [13]: c=[x[2] for x in dat]
+
+In [14]:  
+
+In [14]: print(a)
+['yamda', 'inoue', 'nakano', 'takago']
+
+In [15]: print(b)
+['./ep17/main.pdf', './ep18/main.pdf', './ep19/main.pdf', './ep20/main.pdf']
+
+In [16]: print(c)
+[1000, 20, -10, 30]
+
+In [17]: import random
+
+In [18]: X=[random.randrange(0,255) for _ in range(0,5)]
+
+In [19]: quit()
+
