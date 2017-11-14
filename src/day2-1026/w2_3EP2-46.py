@@ -8,7 +8,6 @@
 # 買い物かごに商品を入れる関数
 def put_in():
     global act, basket, payment
-
     payment += catalog[act[0]] * int(act[1]) * tax
 
     # 買い物かごの中に選んだ商品がない場合
@@ -17,7 +16,6 @@ def put_in():
         basket.update({act[0]:int(act[1])})
     else:
         # 個数を加える
-        print("debug")
         basket[act[0]] += int(act[1])
 
 # 辞書の要素の一覧を表示する関数
@@ -30,17 +28,13 @@ def look_in(dic, title="[買い物かご]", unit="個"):
 
 # 所持金
 myCash = 5000
-
 # 支払金額
 payment = 0
-
 # 消費税
 tax = 1.08
-
 # 買い物かごの生成(商品:個数)
 basket = dict()
 # basket ={}
-
 # 商品カタログの生成
 catalog = dict()
 
@@ -87,7 +81,6 @@ while True:
         print("選択した商品はありません")
 
     print()
-    # print("支払金額 :", payment, "\n")
 
 print("精算します\n")
 payment = int(payment)
