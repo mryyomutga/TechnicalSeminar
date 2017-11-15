@@ -45,3 +45,20 @@ pygameは簡単にゲーム開発できるらしいが、難しい
 
 ### 自由記述
 あまり進まなかった
+
+windowsで暗号化ライブラリのpycryptoをインストールする際にpipではインストールできなかったため以下の手順でインストールした
+
+1. 既存のpythonをアンインストール
+2. Anacondaをインストール
+
+ 	デフォルトでは`conda env list`を実行すると環境が`root`しかないはず
+
+3. PowerShellではactivateができない?ためコマンドプロンプトから`activate`コマンドを実行
+4. `root`環境に入ったら`conda install pycrypto`でpycryptoをインストール
+5. `deactivate`コマンドで環境から抜けてもpycryptoのインポートでエラーが発生しなくなる
+
+Anacondaインストール直後はpipが入っていないため、pipを使いたい場合はその環境下で`conda install pip`でpipをインストール
+
+仮想環境の確認は`conda env list`または`conda info -e`
+
+仮想環境の作成、削除は`conda create -n 環境名`、`conda remove -n 環境名 --all`
