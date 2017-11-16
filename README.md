@@ -46,19 +46,44 @@ pygameは簡単にゲーム開発できるらしいが、難しい
 ### 自由記述
 あまり進まなかった
 
-windowsで暗号化ライブラリのpycryptoをインストールする際にpipではインストールできなかったため以下の手順でインストールした
+windowsでpycryptoのインストールに手間取った
 
-1. 既存のpythonをアンインストール
-2. Anacondaをインストール
+正規表現が非常に難しい
 
- 	デフォルトでは`conda env list`を実行すると環境が`root`しかないはず
-
-3. PowerShellではactivateができない?ためコマンドプロンプトから`activate`コマンドを実行
-4. `root`環境に入ったら`conda install pycrypto`でpycryptoをインストール
-5. `deactivate`コマンドで環境から抜けてもpycryptoのインポートでエラーが発生しなくなる
+## メモ
+### Anaconda
+Anacondaでパッケージのインストールは`conda install パッケージ名`
 
 Anacondaインストール直後はpipが入っていないため、pipを使いたい場合はその環境下で`conda install pip`でpipをインストール
 
 仮想環境の確認は`conda env list`または`conda info -e`
 
 仮想環境の作成、削除は`conda create -n 環境名`、`conda remove -n 環境名 --all`
+
+環境作成時にpythonのバージョンやインストールしておきたいパッケージなどを指定できる
+
+環境の出入りは`activate 環境名(default=root)`、`deactivate`
+
+### pycrypto
+windowsで暗号化ライブラリのpycryptoをインストールする際にpipではインストールできなかった
+
+なので、Anacondaを使って以下の手順でインストールした
+
+1. 既存のpythonをアンインストール
+2. Anacondaをインストール
+
+ 	デフォルトでは`conda env list`を実行すると環境が`root`しかないはず
+
+3. `conda install pycrypto`でpycryptoがroot環境にインストールされる
+
+他の環境に入っていない限りimportでエラーの発生がなくなる
+
+環境を作って、そこにインストールしたい場合
+
+1. ~~PowerShellではactivateができない?ため~~コマンドプロンプトから`activate 環境名`コマンドを実行
+
+    PowerShellで`activate/deactivate`コマンドを使用するにはGithubにあるもので使えるようにする
+
+2. 環境に入ったら`conda install pycrypto`でpycryptoをインストール
+
+環境に入っていればimportでエラーが発生しない
