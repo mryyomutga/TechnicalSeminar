@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
-# 2017/11/9(木) 専門ゼミ 第3回 課題
+# 2017/11/9(木) 専門ゼミ 第3回
 # Author : Ryoga Miyamoto
-# コマンドライン上でヒストグラムを表示する
 from __future__ import print_function
 import random
 
 # 0 ~ 100の整数を1000個生成
-points = list(map(lambda x: random.randrange(1, 101), [n for n in range(1000)]))
+points = list(map(lambda x: random.randrange(1, 101), [n for n in range(100)]))
 hist = [0] * 11
 
 # 生成された乱数から階級毎の度数を記録
@@ -44,5 +43,4 @@ for i, n in enumerate(hist):
         s = " 1 ~  9 [{1:>3}] : {2}".format(i, n, s1)
     elif i == len(hist) - 1:
         s = "   100  [{1:>3}] : {2}".format(i, n, s1)
-
     print(s)
