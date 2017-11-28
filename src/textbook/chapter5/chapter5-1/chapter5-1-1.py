@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-# デスクトップアプリケーションの作成
+# デスクトップアプリケーションの作成1
+# ダイアログ
 import tkinter.messagebox as mb
 # ダイアログの表示
 ans = mb.askyesno("質問", "数学は好きですか?")
