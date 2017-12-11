@@ -61,6 +61,15 @@ Chapter5-1に入った
 ### 自由記述
 乱数を使ったプログラムが多かった
 
+## Day5 2017/11/30(Thu)
+
+目標:Chapter6-3終了
+
+### 活動内容
+学生の作成したプログラムの発表、Pythonのデバッガ__pdb__について
+
+Chapter6-2終了
+
 ## メモ
 ### Anaconda
 Anacondaでパッケージのインストールは`conda install パッケージ名`

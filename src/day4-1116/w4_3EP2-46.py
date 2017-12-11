@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# 2017/11/16(木)
 # Author : Ryoga Miyamoto
 from __future__ import print_function
 
@@ -32,5 +31,5 @@ while cnt < limit:
     cnt += 1
 
 print("呼び出し回数 :", limit)
-print("素数リスト       :", prime)
+print("素数　　　       :", prime)
 print("フィボナッチ数列 :", fibonacci)
